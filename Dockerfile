@@ -10,7 +10,7 @@ COPY app/ /app/
 RUN pip install -r /app/requirements.txt
 
 # Install Nginx
-RUN apt-get update && apt-get install -y nginx && service nginx start
+RUN apt-get update && apt-get install -y nginx
 
 # Remove the default Nginx configuration
 RUN rm /etc/nginx/sites-enabled/default
