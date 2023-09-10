@@ -15,7 +15,7 @@ pipeline {
             steps {
                 script {
                     // Build the Docker image and tag it appropriately
-                    sh 'docker build -t mayurghule/twimbit .'
+                    sh 'docker build -t salmankhan7798/twimbit .'
                 }
             }
         }
@@ -30,7 +30,7 @@ pipeline {
 		stage('Push Image') {
 
 			steps {
-				sh 'docker push mayurghule/twimbit:latest'
+				sh 'docker push salmankhan7798/twimbit:latest'
 			}
 		}
 
@@ -38,7 +38,7 @@ pipeline {
             steps {
                 script {
                     // Build the Docker image and tag it appropriately
-                    sh 'docker run -d -p 80:80 mayurghule/twimbit'
+                    sh 'docker run -d -p 80:80 salmankhan7798/twimbit'
                 }
             }
         }
