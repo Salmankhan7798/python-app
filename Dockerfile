@@ -3,7 +3,6 @@ FROM python:3
 
 # Set the working directory in the container
 WORKDIR /app
-
 # Copy the application code into the container
 COPY app/ /app/
 
