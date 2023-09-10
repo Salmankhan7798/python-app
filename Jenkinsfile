@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/mayurghule494/another_python_project.git'
+                git branch: 'main', url: 'https://github.com/Salmankhan7798/python-app.git'
             }
         }
 
