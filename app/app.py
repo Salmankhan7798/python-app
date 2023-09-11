@@ -23,7 +23,7 @@ def ping(request: Request):
             "Content-Type": "application/json"
         },
         "body": {
-            "Service": "Twimbit API",
+            "Service": "Twimbit API - test commit",
             "Status": "Active"
         }
     })
